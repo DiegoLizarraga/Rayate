@@ -8,25 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎨 Mi Aplicación de Dibujo</h1>
+        <h1>🎨 Mi <span>Aplicación</span> de Dibujo</h1>
         
         <div class="toolbar">
             <div class="tool-group">
-                <label>Colores</label>
+                <label><span>Colores</span> Vibrantes</label>
                 <div class="color-palette">
-                    <div class="color-option active" style="background: #000" data-color="#000"></div>
-                    <div class="color-option" style="background: #ff0000" data-color="#ff0000"></div>
-                    <div class="color-option" style="background: #00ff00" data-color="#00ff00"></div>
-                    <div class="color-option" style="background: #0000ff" data-color="#0000ff"></div>
-                    <div class="color-option" style="background: #ffff00" data-color="#ffff00"></div>
-                    <div class="color-option" style="background: #ff00ff" data-color="#ff00ff"></div>
-                    <div class="color-option" style="background: #00ffff" data-color="#00ffff"></div>
-                    <div class="color-option" style="background: #ffa500" data-color="#ffa500"></div>
+                    <div class="color-option active" style="background: #000" data-color="#000" title="Negro"></div>
+                    <div class="color-option" style="background: #ff0000" data-color="#ff0000" title="Rojo"></div>
+                    <div class="color-option" style="background: #00ff00" data-color="#00ff00" title="Verde"></div>
+                    <div class="color-option" style="background: #0000ff" data-color="#0000ff" title="Azul"></div>
+                    <div class="color-option" style="background: #ffff00" data-color="#ffff00" title="Amarillo"></div>
+                    <div class="color-option" style="background: #ff00ff" data-color="#ff00ff" title="Magenta"></div>
+                    <div class="color-option" style="background: #00ffff" data-color="#00ffff" title="Cyan"></div>
+                    <div class="color-option" style="background: #ffa500" data-color="#ffa500" title="Naranja"></div>
                 </div>
             </div>
             
             <div class="tool-group">
-                <label>Tamaño del Pincel</label>
+                <label><span>Tamaño</span> del Pincel</label>
                 <input type="range" class="brush-size" min="1" max="50" value="5" id="brushSize">
                 <div class="brush-preview">
                     <div class="brush-dot" id="brushPreview"></div>
@@ -34,21 +34,21 @@
             </div>
             
             <div class="tool-group">
-                <label>Acciones</label>
+                <label><span>Acciones</span> Rápidas</label>
                 <div class="buttons">
-                    <button class="btn btn-clear" id="clearBtn">Limpiar</button>
-                    <button class="btn btn-save" id="saveBtn">Descargar</button>
+                    <button class="btn btn-clear" id="clearBtn">🗑️ Limpiar</button>
+                    <button class="btn btn-save" id="saveBtn">💾 Descargar</button>
                 </div>
             </div>
         </div>
         
         <div class="canvas-container">
             <canvas id="canvas" width="800" height="600"></canvas>
-            <div class="saved-indicator" id="savedIndicator">¡Guardado automáticamente!</div>
+            <div class="saved-indicator" id="savedIndicator">✅ ¡Guardado automáticamente!</div>
         </div>
         
         <div class="status">
-            Los dibujos se guardan automáticamente en tu navegador
+            Los dibujos se <span>guardan automáticamente</span> en tu navegador
         </div>
     </div>
 
